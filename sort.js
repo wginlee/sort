@@ -23,9 +23,7 @@ var sorted = students.sort(function (a, b){
   if (a.name < b.name) return -1;
   else if (a.name > b.name) return 1;
   else{
-    if (b.age > a.age) return 1;
-    if (b.age < a.age) return -1;
-    else return 0;
+    return a.age - b.age;
   }
 
 });
